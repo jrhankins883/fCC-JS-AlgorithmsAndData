@@ -37,3 +37,24 @@ function getGrade(score) {
 console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
+
+// Exercise 3
+function hasPassingGrade(score) {
+  if (getGrade(score) == "A++") {
+    return true;
+  } else if (getGrade(score) == "A") {
+    return true;
+  } else if (getGrade(score) == "B") {
+    return true;
+  } else if (getGrade(score) == "C") {
+    return true;
+  } else if (getGrade(score) == "D") {
+    return true;
+  } else
+    return false;
+}
+
+
+console.log(hasPassingGrade(100));
+console.log(hasPassingGrade(53));
+console.log(hasPassingGrade(87));
